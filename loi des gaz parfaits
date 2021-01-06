@@ -1,0 +1,24 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import math 
+
+print ("Calculer la pression alors 1, calculer la température alors 2")
+reponse = int(input())
+print ("choisir la valeur de n en mole")
+n = int(input())
+print("choisir la valeur de V en mètre cube")
+V = int(input())
+print("R est une constante égale à 8,314 462 618 153 24 J/(mol.K)")
+R = 8 
+print("choisir la valeur de T ")
+T = int(input())
+if reponse==1 :
+    for P in range(100):
+    P = (n*R*T)/V
+    print("voilà la valeur de P=",P) 
+if reponse==2:
+    print("choisir la valeur de P")
+    P= int(input())
+       for T in range(100):
+       T= (P*V)/(n*R)
+       print("voilà la température T=",T)
